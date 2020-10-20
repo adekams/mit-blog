@@ -73,7 +73,7 @@ div#container {
     flex-direction: column;
 }
 p {
-    line-height: 1.5;
+    line-height: 1.7;
     color: #615f5f;
 }
 div#icons {
@@ -136,6 +136,7 @@ main {
     float: right;
     max-width: 100%;
     height: 100vh;
+    overflow: auto;
 }
 main .intro {
     text-align: center;
@@ -144,9 +145,13 @@ main .intro {
     padding: 20px;
 }
 main h2 {
-    /* text-align: left; */
-    font-size: 2.2em;
+    text-align: left;
+    font-size: 1.7em;
     line-height: 1.5;
+    margin-bottom: 10px;
+}
+main #blog-title {
+    text-align: center;
 }
 main #subscribe {
     margin: 20px auto;
@@ -167,27 +172,28 @@ main #subscribe input {
     border: 1px solid #ccc;
     border-radius: 3px;
 }
-main #devblog {
+/* main #devblog {
     padding-bottom: 30px;
-}
+} */
 .posts.flex{
     margin-top: 30px;
     justify-content: right;
 }
 
-.posts .post-info {
-    margin: 5px 0;
+.posts .post-info, .page-content .post-info {
+    margin: 10px 0;
 }
 div span, figcaption a {
-    margin-right: 5px;
-    color: #ccc;
-    font-size: 1em;
+    margin-right: 0px;
+    color: rgb(168, 163, 163);
+    font-size: 0.8em;
+    font-weight: 400;
 }
 figcaption {
     text-align: center;
-    color: #ccc;
+    color: #a8a3a3;
     font-size: 0.8em;
-    margin: auto;
+    margin: 0 9px 15px;
 }
 .posts .post-img {
     display: none;
@@ -203,21 +209,23 @@ figcaption {
 a.read-more {
     color: #59C168;
     font-size: 1em;
-    line-height: 1.5;
+    line-height: 1.8;
 }
 a.read-more:hover {
     color: #438e4e;
 }
 #devblog .texts{
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 .page-content{
-    width: 80%;
-    margin: 15px auto;
+    width: 95%;
+    margin: 30px auto;
 }
 .page-content h3 {
     font-size: 1.5em;
+    line-height: 1.8;
+    margin-bottom: 10px;
 }
 .nav-toggleShow {
     display: block;
@@ -225,10 +233,14 @@ a.read-more:hover {
 
 .about-me img, .page-content figure.blog img {
     width: 100%;
+    margin: 20px 0;
     
 }
 
 @media (min-width: 768px) {
+    /* body {
+        overflow: hidden;
+    } */
     div#container {
         flex-direction: row;
     }
@@ -241,7 +253,11 @@ a.read-more:hover {
     }
 
     main {
-        width: 72%;   
+        width: 72%;
+    }
+    main h2 {
+        text-align: center;
+        font-size: 2.2em;
     }
     main #subscribe {
         display: flex;
@@ -250,6 +266,10 @@ a.read-more:hover {
     main #subscribe #subscribe-btn {
         width: 40%;
         margin: 0 10px;
+    }
+    div span, figcaption a  {
+        font-size: 1em;
+
     }
     #devblog .texts{
         width: 70%;
@@ -262,14 +282,17 @@ a.read-more:hover {
         display: inline;
         width: 100px;
         height: 100px;   
-        margin-right: 20px;
+        /* margin-right: 20px; */
         margin-left: auto;
+    }
+    .page-content {
+        width: 80%;
     }
     .page-content figure.blog{
         margin: 10px auto;
     }
     .blog img, .about-me img{
         width: 100%;
-        margin: 10px auto;
+        /* margin: 10px auto; */
     }
 }
