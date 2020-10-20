@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+aside{
+    background: #5FCC70;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    color: #fff;
+    max-width: 100%;
+}
+.aside-items {
+    display: none;
+}
+a, button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    /*  */
+}
+a#more {
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+.nav-toggle #toggle {
+    color: #FAFAFA;
+    display: inline;
+    float: left;
+    cursor: pointer;
+    border: 1px solid #fafafa;
+    border-radius: 3px;
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: 400;
+}
+#nav a{
+    margin: 10px 0px;
+    color: #fff;
+}
+#nav a.active {
+    color: #438e4e;
+}
+hr{
+    border: 1px solid #59C168;/* rgba(1, 0, 1, 0.2)*/
+    margin: 30px 1px;
+}
+div#container {
+    flex-direction: column;
+}
+p {
+    line-height: 1.5;
+    color: #615f5f;
+}
+div#icons {
+    margin: 30px 0;
+    text-align: center;
+
+}
+div#icons i {
+    padding: 8px;
+    background-color: #fff;
+    color: #59C168;
+    font-size: 0.8em;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+div#icons i:hover {
+    color: #438e4e;
+}
+aside h1 {
+    font-size: 1.8em;
+    margin: 10px auto;
+    font-weight: 900;
+}
+aside img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin:20px;
+}
+aside p {
+    color: #fafafa;
+}
+#nav > .nav-item {
+    display: block;
+}
+#nav > .nav-item:hover {
+    color: #438e4e;
+}
+#nav i {
+    margin-right: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+#nav > button{
+    background: #438e4e;   
+    color: #fff;
+}
+#nav > button:hover {
+    background: #fff;
+    color: #438e4e;
+}
+
+main {
+    color: #282828;
+    float: right;
+    max-width: 100%;
+    height: 100vh;
+}
+main .intro {
+    text-align: center;
+    background: #FAFAFA;
+    margin-top: 0;
+    padding: 20px;
+}
+main h2 {
+    /* text-align: left; */
+    font-size: 2.2em;
+    line-height: 1.5;
+}
+main #subscribe {
+    margin: 20px auto;
+}
+main #subscribe #subscribe-btn{
+    background: #59C168;
+    color: #fff;
+    margin: 10px 0;
+    border-radius: 3px;
+    width: 100%;
+}
+main #subscribe #subscribe-btn:hover {
+    background: #438e4e;
+}
+main #subscribe input {
+    padding: 8px 36px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.posts.flex{
+    margin-top: 30px;
+    justify-content: right;
+}
+
+.posts .post-info {
+    margin: 5px 0;
+}
+div span, figcaption a {
+    margin-right: 5px;
+    color: #ccc;
+    font-size: 1em;
+}
+figcaption {
+    text-align: center;
+    color: #ccc;
+    font-size: 0.8em;
+    margin: auto;
+}
+.posts .post-img {
+    display: none;
+}
+.posts .post-title a {
+    color: #282828;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.posts .post-title a:hover {
+    text-decoration: underline;
+}
+a.read-more {
+    color: #59C168;
+    font-size: 1em;
+    line-height: 1.5;
+}
+a.read-more:hover {
+    color: #438e4e;
+}
+#devblog .texts{
+    width: 80%;
+    margin: auto;
+}
+.page-content{
+    width: 80%;
+    margin: 15px auto;
+}
+.page-content h3 {
+    font-size: 1.5em;
+}
+.nav-toggleShow {
+    display: block;
+}
+
+.about-me img, .page-content figure.blog img {
+    width: 100%;
+    
+}
+
+@media (min-width: 768px) {
+    div#container {
+        flex-direction: row;
+    }
+    aside {
+        width: 28%;
+        height: 100vh;
+    }
+    .aside-items {
+        display: block;
+    }
+
+    main {
+        width: 72%;   
+    }
+    main #subscribe {
+        display: flex;
+        width: 50%;
+    }
+    main #subscribe #subscribe-btn {
+        width: 40%;
+        margin: 0 10px;
+    }
+    #devblog .texts{
+        width: 70%;
+        margin-right: auto;
+    }
+    .nav-toggle #toggle {
+        display: none;
+    }
+    .posts .post-img {
+        display: inline;
+        width: 100px;
+        height: 100px;   
+        margin-right: 20px;
+        margin-left: auto;
+    }
+    .page-content figure.blog{
+        margin: 10px auto;
+    }
+    .blog img, .about-me img{
+        width: 100%;
+        margin: 10px auto;
+    }
+}

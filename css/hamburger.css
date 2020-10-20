@@ -1,0 +1,102 @@
+body{
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+.side{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    background-color: #123;
+    transition: 0.7s;
+
+}
+#icon{
+  font-size: 30px;
+}
+.side a{
+  display: block;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ccc;
+}
+.side a:hover{
+    color: white;
+    transition: 0.4s;
+}
+.side .close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#content .products img{
+    width: 235px;
+    height: 20%;
+    margin-left: 70px;
+    margin-top: 25px;
+    /* display: block; */
+}
+
+.image{
+    width: 235px;
+    height: 20%; 
+    margin-right: 30px;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.image .overlay{
+    width: 0;
+    height: 90%;
+    margin-left: 70px;
+    margin-top: 26px;
+    background: rgba(17, 34, 51, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.image:hover .overlay{
+    width: 235px;
+    transition: 0.7s;
+}
+
+.image .overlay h3{
+    color: #ccc;
+}
+#content .products img:hover{
+    cursor: pointer;
+}
+
+.slide a{
+    color: #123;
+
+}
+
+#content{
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    width: 100%; /*remove this to allow the cotent drop down*/
+}
+#content h1{
+    font-size: 40px;
+    text-align: center;
+    color: #123;
+}
+
+
