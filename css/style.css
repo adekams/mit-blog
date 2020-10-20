@@ -247,6 +247,7 @@ a.read-more:hover {
     aside {
         width: 28%;
         height: 100vh;
+        overflow: auto;
     }
     .aside-items {
         display: block;
