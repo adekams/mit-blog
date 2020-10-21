@@ -1,8 +1,10 @@
 
 const classToggle = () => {
-    const navs = document.querySelectorAll('.aside-items')
+    const nav = document.querySelector('.aside-items')
 
-    navs.forEach(nav => nav.classList.toggle('nav-toggleShow'));
+    nav.classList.toggle('nav-toggleShow');
 }
 
 document.querySelector('.nav-toggle').addEventListener('click', classToggle);
+
+
